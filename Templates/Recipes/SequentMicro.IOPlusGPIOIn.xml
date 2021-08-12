@@ -1,0 +1,16 @@
+<Model Name="SequentMicro.IOPlusGPIOIn">
+  <BaseModel>I2CDeviceChannelGroup</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Description" Type="string" Value="Read all GPIO pin values"></Attribute>
+    <Attribute Name="Input" Type="bool" Value="1"></Attribute>
+    <Attribute Name="Address" Type="unsigned char" Value="4"></Attribute>
+  </Attributes>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO1" Nr="0"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO2"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO3" Nr="2"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO4" Nr="3"></Channel>
+
+</Model>

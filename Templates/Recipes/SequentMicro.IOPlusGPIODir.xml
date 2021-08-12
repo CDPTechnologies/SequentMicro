@@ -1,0 +1,15 @@
+<Model Name="SequentMicro.IOPlusGPIODir">
+  <BaseModel>I2CDeviceChannelGroup</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Description" Type="string" Value="Set GPIO pin directions where 0 is Out pin and 1 is In pin"></Attribute>
+    <Attribute Name="Address" Type="unsigned char" Value="7"></Attribute>
+  </Attributes>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO1Dir" Description="Set gpio pins direction I/O  0- output; 1-input" Input="1" Nr="0"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO2Dir" Description="Set gpio pins direction I/O  0- output; 1-input" Input="1"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO3Dir" Description="Set gpio pins direction I/O  0- output; 1-input" Input="1" Nr="2"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="GPIO4Dir" Description="Set gpio pins direction I/O  0- output; 1-input" Input="1" Nr="3"></Channel>
+
+</Model>

@@ -15,6 +15,9 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/SequentMicro.IOPlus.xml \
     Templates/Recipes/SequentMicro.IOPlusADC.xml \
     Templates/Recipes/SequentMicro.IOPlusDAC.xml \
+    Templates/Recipes/SequentMicro.IOPlusGPIODir.xml \
+    Templates/Recipes/SequentMicro.IOPlusGPIOIn.xml \
+    Templates/Recipes/SequentMicro.IOPlusGPIOOut.xml \
     Templates/Recipes/SequentMicro.IOPlusOpto.xml \
     Templates/Models/SequentMicro.IOPlusData.xml \
     Templates/Recipes/SequentMicro.IOPlusOdPWM.xml \
