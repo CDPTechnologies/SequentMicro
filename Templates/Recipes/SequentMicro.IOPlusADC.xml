@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlusADC">
+  <BaseModel>SequentMicro.IOPlusData</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Description" Type="string" Value="Read all ADC Voltages from Channels as single block, starting from base address 0x18 (dec 24) (reads 2 bytes * 8 channels = 16 bytes)"></Attribute>
+    <Attribute Name="Input" Type="bool" Value="1"></Attribute>
+    <Attribute Name="Address" Type="unsigned char" Value="24"></Attribute>
+  </Attributes>
+
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel1" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel2" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel3" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel4" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel5" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel6" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel7" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel8" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
+    <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
+    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
+
+</Model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlusData">
+  <BaseModel>I2CDeviceChannelGroup</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+  <Attributes>
+    <Attribute Name="Address" Type="unsigned char" TypeHint="Radix" Radix="10" Required="1" Description="Register address for IO access"></Attribute>
+    <Attribute Name="Input" Type="bool" Required="1" Description="Set to: &lt;br&gt; &apos;1&apos; for register Read &lt;br&gt; &apos;0&apos; for register Write"></Attribute>
+    <Attribute Name="Description" Type="string" Value="IOPlus device read/write block for custom register data mapping to/from channel values on the device"></Attribute>
+  </Attributes>
+
+  <Element Name="Channel" Property="0" AcceptsModel="CDPSignalChannel&lt;&gt;"></Element>
+</Model>

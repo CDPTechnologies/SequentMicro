@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlus">
+  <BaseModel>I2CDevice</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+  <Attributes>
+    <Attribute Name="Address" Type="unsigned char" Value="40" TypeHint="Selection" Selection="40;41;42;43;44;45;46;47" Description="Stack number mapping to addresses: &lt;br&gt;0 - 40,&lt;br&gt; 1 - 41,&lt;br&gt; 2 - 42,&lt;br&gt; 3 - 43,&lt;br&gt; 4 - 44,&lt;br&gt; 5 - 45,&lt;br&gt; 6 - 46,&lt;br&gt; 7 - 47"></Attribute>
+    <Attribute Name="Model" Type="string" Value="SequentMicro.IOPlus"></Attribute>
+    <Attribute Name="Description" Type="string" Value="Sequent Microsystems IOPlus device. The stack number can be selected trough the Address filed (0 - 40, 1 - 41, 2 - 42, 3 - 43, 4 - 44, 5 - 45, 6 - 46, 7 - 47)"></Attribute>
+  </Attributes>
+
+  <Element Name="ChannelGroup" Property="0" AcceptsModel="SequentMicro.IOPlusData"></Element>
+
+</Model>

@@ -1,0 +1,11 @@
+<Library Name="SequentMicro">
+ <Models>
+  <Model Name="SequentMicro.IOPlus"/>
+  <Model Name="SequentMicro.IOPlusData"/>
+  <Model Name="SequentMicro.IOPlusADC"/>
+  <Model Name="SequentMicro.IOPlusDAC"/>
+  <Model Name="SequentMicro.IOPlusOdPWM"/>
+  <Model Name="SequentMicro.IOPlusOpto"/>
+  <Model Name="SequentMicro.IOPlusRelay"/>
+ </Models>
+</Library>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlusDAC">
+  <BaseModel>SequentMicro.IOPlusData</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Address" Type="unsigned char" Value="40"></Attribute>
+    <Attribute Name="Description" Type="string" Value="Write all Voltages to DAC as single block. 12VEX pin on extention header must be supplied with 12 V refference voltage."></Attribute>
+  </Attributes>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel1" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="V">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming Voltage value to 0 V - 10 V">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit min Voltage to 0 V" Unit="V"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10" Description="Limit Max voltage to 10 V" Unit="V"></Argument></Operator>
+    <Operator Model="Automation.MulOperator&lt;double&gt;" Name="ScaleToRaw" Description="Multiply by 1000 to get raw value for register write">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000" Description="To raw register value multiplier"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel2" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="V">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming Voltage value to 0 V - 10 V">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit min Voltage to 0 V" Unit="V"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10" Description="Limit Max voltage to 10 V" Unit="V"></Argument></Operator>
+    <Operator Model="Automation.MulOperator&lt;double&gt;" Name="ScaleToRaw" Description="Multiply by 1000 to get raw value for register write">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000" Description="To raw register value multiplier"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel3" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="V">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming Voltage value to 0 V - 10 V">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit min Voltage to 0 V" Unit="V"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10" Description="Limit Max voltage to 10 V" Unit="V"></Argument></Operator>
+    <Operator Model="Automation.MulOperator&lt;double&gt;" Name="ScaleToRaw" Description="Multiply by 1000 to get raw value for register write">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000" Description="To raw register value multiplier"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel4" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="V">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming Voltage value to 0 V - 10 V">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit min Voltage to 0 V" Unit="V"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10" Description="Limit Max voltage to 10 V" Unit="V"></Argument></Operator>
+    <Operator Model="Automation.MulOperator&lt;double&gt;" Name="ScaleToRaw" Description="Multiply by 1000 to get raw value for register write">
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000" Description="To raw register value multiplier"></Argument></Operator></Channel>
+
+</Model>

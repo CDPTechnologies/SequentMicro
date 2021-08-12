@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlusOpto">
+  <BaseModel>SequentMicro.IOPlusData</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Input" Type="bool" Value="1"></Attribute>
+    <Attribute Name="Address" Type="unsigned char" Value="3"></Attribute>
+    <Attribute Name="Description" Type="string" Value="Read all opto channels as 8 bit register single byte read. VEXT pin in extention header must be supplied with refference voltage for the inputs."></Attribute>
+  </Attributes>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel1" Nr="0"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel2"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel3" Nr="2"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel4" Nr="3"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel5" Nr="4"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel6" Nr="5"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel7" Nr="6"></Channel>
+  <Channel Model="CDPSignalChannel&lt;bool&gt;" Name="Channel8" Nr="7"></Channel>
+
+</Model>

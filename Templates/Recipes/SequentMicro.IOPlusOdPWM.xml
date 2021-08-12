@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="SequentMicro.IOPlusOdPWM">
+  <BaseModel>SequentMicro.IOPlusData</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+
+  <Attributes>
+    <Attribute Name="Description" Type="string" Value="Write all PWM values to OpenDrain PWM as single block, starting from base address 0x30 (dec 48). Can&apos;t be used same time as IOPlusDAC."></Attribute>
+    <Attribute Name="Address" Type="unsigned char" Value="48"></Attribute>
+  </Attributes>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel1" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="PWM 0-10000">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming PWM value to 0 - 10000">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit PWM min input 0"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10000" Description="Limit PWM Max input to 10000"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel2" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="PWM 0-10000">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming PWM value to 0 - 10000">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit PWM min input 0"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10000" Description="Limit PWM Max input to 10000"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel3" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="PWM 0-10000">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming PWM value to 0 - 10000">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit PWM min input 0"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10000" Description="Limit PWM Max input to 10000"></Argument></Operator></Channel>
+  <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel4" Description="Raw data has 2 bytes per channel, use unsigned short as type" Input="1" Unit="PWM 0-10000">
+    <Operator Model="Automation.MinMaxLimiter&lt;double&gt;" Name="MinMaxLimiter" Description="Limit incoming PWM value to 0 - 10000">
+
+      <Argument Name="Min" Model="DefaultArgument&lt;double&gt;" Description="Limit PWM min input 0"></Argument>
+      
+      <Argument Model="DefaultArgument&lt;double&gt;" Name="Max" Value="10000" Description="Limit PWM Max input to 10000"></Argument></Operator></Channel>
+
+</Model>
