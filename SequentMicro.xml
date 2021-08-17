@@ -4,11 +4,11 @@
   <Model Name="SequentMicro.IOPlusData"/>
   <Model Name="SequentMicro.IOPlusADC"/>
   <Model Name="SequentMicro.IOPlusDAC"/>
+  <Model Name="SequentMicro.IOPlusGPIODir"/>
+  <Model Name="SequentMicro.IOPlusGPIOIn"/>
+  <Model Name="SequentMicro.IOPlusGPIOOut"/>
   <Model Name="SequentMicro.IOPlusOdPWM"/>
   <Model Name="SequentMicro.IOPlusOpto"/>
   <Model Name="SequentMicro.IOPlusRelay"/>
-  <Model Name="SequentMicro.IOPlusGPIOIn"/>
-  <Model Name="SequentMicro.IOPlusGPIOOut"/>
-  <Model Name="SequentMicro.IOPlusGPIODir"/>
  </Models>
 </Library>

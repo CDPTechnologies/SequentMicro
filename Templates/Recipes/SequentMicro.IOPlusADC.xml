@@ -13,42 +13,42 @@
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel1" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel2" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel3" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel4" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel5" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel6" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel7" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
   <Channel Model="CDPSignalChannel&lt;unsigned short&gt;" Name="Channel8" Description="Raw data has 2 bytes per channel, use unsigned short as type" Unit="V">
     <Operator Model="Automation.DivOperator&lt;double&gt;" Name="Divide" Description="Divide raw register value by 1000">
       <Argument Model="DefaultArgument&lt;double&gt;" Name="In1" Value="1000"></Argument></Operator>
-    <Operator Model="Automation.MovingAverage&lt;double&gt;" Name="MovingAverage" Description="Remove noise from the resulting value" AverageType="Median">
+    <Operator Model="Automation.KalmanFilter&lt;double&gt;" Name="KalmanFilter" Description="Remove noise from the resulting value"   >
       <Argument Model="DefaultArgument&lt;double&gt;" Name="Time" Value="0.5"></Argument></Operator></Channel>
 
 </Model>
