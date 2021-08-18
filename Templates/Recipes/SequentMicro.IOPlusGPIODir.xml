@@ -1,5 +1,5 @@
 <Model Name="SequentMicro.IOPlusGPIODir">
-  <BaseModel>I2CDeviceChannelGroup</BaseModel>
+  <BaseModel>SequentMicro.IOPlusData</BaseModel>
   <ModelTypeClass>XML</ModelTypeClass>
 
 
